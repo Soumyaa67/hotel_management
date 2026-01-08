@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hotel Room Booking</h1>
+
+    <form id="bookingForm" class="booking-form">
+      <input type="text" id="name" placeholder="Customer Name" required>
+
+<select id="roomType">
+  <option value="1000">Standard – ₹1000 / day</option>
+  <option value="2000">Deluxe – ₹2000 / day</option>
+  <option value="3000">Suite – ₹3000 / day</option>
+  <option value="4000">Luxury Suite – ₹4000 / day</option>
+</select>
+
+
+      <input type="number" id="days" placeholder="Number of Days" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <p id="cost" class="cost"></p>
+    <p id="message" class="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
